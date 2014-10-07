@@ -9,6 +9,7 @@ class Item
   property :content, Text, :required => true
   property :done, Boolean, :required => true, :default => false
   property :created, DateTime
+  property :updated_at, DateTime
 end
 DataMapper.finalize.auto_upgrade!
 
